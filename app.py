@@ -18,4 +18,4 @@ if st.button("Predict Sales"):
     # Create features array matched to training schema
     features = pd.DataFrame([[tv, radio, newspaper]], columns=['TV', 'Radio', 'Newspaper'])
     prediction = model.predict(features)
-    st.success(f"Predicted Sales: {prediction[0]:.2f} units")
+    st.success(f"Predicted Sales: {prediction[0]:.2f} M")
